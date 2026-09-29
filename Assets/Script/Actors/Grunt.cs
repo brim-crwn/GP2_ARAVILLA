@@ -1,16 +1,18 @@
 using UnityEngine;
 
-public abstract class Grunt : Actor
+public class Grunt : Actor
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Awake()
     {
-        
-    }
+        base.Awake();
+        maxhealth = 50f; // Set Grunt's max health
+        currentHealth = maxhealth; // Initialize current health
+        speed = 4; // Set Grunt's speed
 
-    // Update is called once per frame
-    void Update()
+
+    }
+    public override void PerformAttack()
     {
-        
+        Debug.Log($"{gameObject.name} bashed player did {damage} damage");
     }
 }

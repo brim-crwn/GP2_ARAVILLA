@@ -1,16 +1,19 @@
 using UnityEngine;
 
-public class Runner : MonoBehaviour
+public class Runner : Actor
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Awake()
     {
-        
-    }
+        base.Awake();
+        maxhealth = 10f; // Set Runner's max health
+        currentHealth = maxhealth; // Initialize current health
+        speed = 10; // Set Runner's speed
+        damage = 40; // Set Runner's damage
 
-    // Update is called once per frame
-    void Update()
+
+    }
+    public override void PerformAttack()
     {
-        
+        Debug.Log($"{gameObject.name} Tackle player did {damage} damage");
     }
 }

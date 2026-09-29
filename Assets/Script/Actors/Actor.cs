@@ -3,10 +3,10 @@ using UnityEngine;
 public abstract class Actor : MonoBehaviour
 {
     [Header("Basic Actor Attributes")]
-    [SerializeField] private float maxhealth = 100f;
+    [SerializeField] protected float maxhealth = 100f;
     protected float currentHealth;
-    [SerializeField] private float speed = 5f;
-    [SerializeField] private float damage= 10f;
+    [SerializeField] protected float speed = 5f;
+    [SerializeField] protected float damage= 10f;
 
 
     //We mark as virtual: ensured child classes can initialize their own variable in their own Awake.
