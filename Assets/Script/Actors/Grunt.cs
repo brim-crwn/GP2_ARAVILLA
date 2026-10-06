@@ -5,7 +5,7 @@ public class Grunt : Actor
     protected override void Awake()
     {
         base.Awake();
-        maxhealth = 50f; // Set Grunt's max health
+        maxhealth = 150f; // Set Grunt's max health
         currentHealth = maxhealth; // Initialize current health
         speed = 4; // Set Grunt's speed
 

@@ -15,6 +15,7 @@ public class Exploder : Actor
     private void Explode()
     {
         Debug.Log("BOOM");
+        
         Destroy(gameObject);
     }
 }

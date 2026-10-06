@@ -7,7 +7,7 @@ public abstract class Actor : MonoBehaviour
     protected float currentHealth;
     [SerializeField] protected float speed = 5f;
     [SerializeField] protected float damage= 10f;
-
+    Rigidbody rb;
 
     //We mark as virtual: ensured child classes can initialize their own variable in their own Awake.
     protected virtual void Awake()

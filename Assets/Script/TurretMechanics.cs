@@ -9,9 +9,6 @@ public class TurretMechanics : MonoBehaviour
     //Rotation setting
     [SerializeField] private float rotationSpeed = 5f;
 
-    //Alignment esque
-    [SerializeField] private float alignmentThreshold = 0.98f;
-
 
     private void Update()
     {
