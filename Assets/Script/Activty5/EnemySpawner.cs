@@ -30,7 +30,6 @@ public class EnemySpawner : MonoBehaviour
             EnemyData prefabsToSpawn = enemyLookUpTable[levelNumber];
 
             Instantiate(prefabsToSpawn);
-            slimePrefab.baseSpeed = 3;
         }
     }
 
