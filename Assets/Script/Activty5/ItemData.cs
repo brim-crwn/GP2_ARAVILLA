@@ -3,15 +3,17 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewItem", menuName = "Gate Data/Item")]
 public class ItemData : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("Basic Info")]
+    public int enemyID;
+    public string EnemyName;
+    public Sprite enemyIcon;
+    public GameObject enemyModel;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [Header("CombatStats")]
+    public int baseDamage;
+    public int baseHealth;
+    public float baseSpeed;
+
+    [Header("Audio")]
+    public AudioClip enemyNoise;
 }
